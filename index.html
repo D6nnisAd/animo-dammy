@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animo | Your Ecosystem for Growth and Opportunity</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join Animo, a globally connected ecosystem for personal growth and opportunity. Explore our Skillup programs, walk-and-earn technology, and a dynamic marketing network to build your future.">
+    <meta name="keywords" content="Animo, personal growth, skill acquisition, walk-to-earn, digital real estate, wealth creation, online earning, marketing network, animoofficial.com.ng">
+    <meta name="author" content="Animo Official">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://animoofficial.com.ng/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://animoofficial.com.ng/">
+    <meta property="og:title" content="Animo | Your Ecosystem for Growth and Opportunity">
+    <meta property="og:description" content="Join Animo, a globally connected ecosystem for personal growth and opportunity. Explore our Skillup programs, walk-and-earn technology, and a dynamic marketing network to build your future.">
+    <meta property="og:image" content="https://animoofficial.com.ng/assets/about-image.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://animoofficial.com.ng/">
+    <meta property="twitter:title" content="Animo | Your Ecosystem for Growth and Opportunity">
+    <meta property="twitter:description" content="Join Animo, a globally connected ecosystem for personal growth and opportunity. Explore our Skillup programs, walk-and-earn technology, and a dynamic marketing network to build your future.">
+    <meta property="twitter:image" content="https://animoofficial.com.ng/assets/about-image.jpeg">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-blue: #03082E;
+            --lime-green-start: #ccff66;
+            --lime-green-end: #a2d939;
+            --light-grey: #f8f9fa;
+            --border-grey: #dee2e6;
+            --gold-start: #FFD700;
+            --gold-end: #FFAA00;
+            --silver-start: #C0C0C0;
+            --silver-end: #EAEAEA;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--deep-blue);
+            color: #fff;
+            overflow-x: hidden; /* Prevent horizontal scroll from AOS */
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10+ and Edge */
+            user-select: none; /* Standard syntax */
+        }
+
+        /* --- Navbar --- */
+        .navbar {
+            transition: background-color 0.4s ease-in-out;
+        }
+
+        .navbar-scrolled {
+            background-color: rgba(3, 8, 46, 0.6);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px); /* Safari support */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 35px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: var(--lime-green-start);
+            font-size: 1.5rem;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .nav-link {
+            color: #fff;
+            font-weight: 500;
+            margin: 0 0.75rem;
+            text-transform: capitalize;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--lime-green-start);
+        }
+
+        /* --- Buttons --- */
+        .btn-gradient {
+            background-image: linear-gradient(135deg, var(--lime-green-start) 0%, var(--lime-green-end) 100%);
+            border: none;
+            color: var(--deep-blue);
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(178, 222, 60, 0.3);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(178, 222, 60, 0.5);
+            color: var(--deep-blue);
+        }
+
+        .btn-secondary-custom {
+            background-color: var(--light-grey);
+            color: var(--deep-blue);
+            border: 1px solid var(--border-grey);
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .btn-secondary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: var(--deep-blue);
+        }
+
+        /* --- Hero Section --- */
+        #hero-section {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            background-image: url('/assets/desktop-background.jpg');
+            background-size: cover;
+            background-position: center center;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-text-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-logo {
+            height: 50px;
+        }
+
+        .hero-slogan {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            max-width: 450px;
+        }
+
+        .cta-buttons .btn-gradient {
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        }
+        .cta-buttons .btn-secondary-custom {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .hero-img-desktop,
+        .hero-img-mobile {
+            position: absolute;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .hero-img-desktop {
+            right: 11rem;
+            max-width: 45%;
+            height: auto;
+            max-height: 95vh;
+        }
+
+        .hero-img-mobile {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 480px;
+        }
+
+        /* --- Section Titles --- */
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .section-title .highlight {
+            background-image: linear-gradient(135deg, var(--lime-green-start) 0%, var(--lime-green-end) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* --- About Section --- */
+        #about-section {
+            padding: 100px 0;
+            position: relative;
+            background: linear-gradient(180deg, rgba(3, 8, 46, 1) 0%, rgba(5, 12, 60, 1) 100%);
+        }
+        
+        .about-text {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+        
+        .about-image-container {
+            position: relative;
+        }
+        
+        .about-image {
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Decorative floating logos */
+        .about-image-container::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 80px;
+            height: 80px;
+            background-image: url('/assets/logo-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: -1;
+        }
+         .about-image-container::after {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 100px;
+            height: 100px;
+            background-image: url('/assets/logo-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* --- Features Section --- */
+        #features-section {
+            padding: 100px 0;
+            background-color: var(--deep-blue);
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        #features-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(204, 255, 102, 0.05), transparent 70%);
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .feature-card-link, .feature-card-link:hover {
+            text-decoration: none;
+            display: block;
+            height: 100%;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--lime-green-start);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-card-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .feature-card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .feature-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #fff;
+        }
+
+        .feature-card-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* --- Packages Section --- */
+        #packages-section {
+            padding: 100px 0;
+            position: relative;
+            background: linear-gradient(180deg, rgba(5, 12, 60, 1) 0%, rgba(3, 8, 46, 1) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .package-card {
+            position: relative;
+            border-radius: 20px;
+            padding: 2.5rem;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(10, 20, 70, 0.3);
+            border: 2px solid transparent;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .popular-tag {
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background-image: linear-gradient(135deg, var(--gold-start) 0%, var(--gold-end) 100%);
+            color: var(--deep-blue);
+            padding: 0.5rem 2.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transform: rotate(45deg);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @keyframes gold-glow {
+            0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 170, 0, 0.2); }
+            50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 170, 0, 0.4); }
+            100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 170, 0, 0.2); }
+        }
+
+        .package-card-gold {
+            animation: gold-glow 4s infinite ease-in-out;
+        }
+
+        .package-card-gold:hover {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.6), 0 0 50px rgba(255, 170, 0, 0.5);
+        }
+
+
+        .package-card::before { /* Background image container */
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 50%;
+            background-size: cover;
+            background-position: top center;
+            opacity: 0.15;
+            z-index: -1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .package-card:hover::before {
+            opacity: 0.25;
+        }
+
+        .package-card-silver {
+            border-image: linear-gradient(135deg, var(--silver-start), #556270) 1;
+        }
+        .package-card-silver:hover {
+            border-image: linear-gradient(135deg, #fff, var(--silver-start)) 1;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+        .package-card-silver::before {
+            background-image: url('/assets/animo-silver.jpeg');
+        }
+
+        .package-card-gold {
+            border-image: linear-gradient(135deg, var(--gold-end), var(--gold-start)) 1;
+        }
+        .package-card-gold:hover {
+            border-image: linear-gradient(135deg, #fff, var(--gold-start)) 1;
+        }
+        .package-card-gold::before {
+             background-image: url('/assets/animo-gold.jpeg');
+        }
+
+        .package-card .subtitle {
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .package-card .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .title-gold {
+            background-image: linear-gradient(135deg, var(--gold-start) 0%, var(--gold-end) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .title-silver {
+            background-image: linear-gradient(135deg, var(--silver-end) 0%, var(--silver-start) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .reward-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .reward-item .label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .reward-item .value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .incentives-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 2rem;
+        }
+
+        .incentives-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 500;
+        }
+
+        .incentives-list li:last-child {
+            border-bottom: none;
+        }
+
+        .status-badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+        }
+
+        .status-active {
+            background-color: rgba(204, 255, 102, 0.2);
+            color: var(--lime-green-start);
+        }
+
+        .status-inactive {
+            background-color: rgba(255, 82, 82, 0.2);
+            color: #ff5252;
+        }
+
+        /* --- FAQ Section --- */
+        #faq-section {
+            padding: 100px 0;
+            background-color: var(--deep-blue);
+        }
+
+        .accordion-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px !important; /* Override bootstrap */
+            margin-bottom: 1rem;
+        }
+
+        .accordion-header {
+            border-bottom: none;
+        }
+
+        .accordion-button {
+            background-color: transparent;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 12px !important;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(204, 255, 102, 0.25);
+            border-color: rgba(255,255,255,0.1);
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: var(--lime-green-start);
+            background-color: transparent;
+            box-shadow: none;
+        }
+        
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ccff66'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        .accordion-body {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+        }
+
+        /* --- CTA Section --- */
+        #cta-section {
+            padding: 100px 0;
+            background: linear-gradient(0deg, rgba(3, 8, 46, 1) 0%, rgba(5, 12, 60, 1) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .cta-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #020624;
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-tagline {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            max-width: 280px;
+        }
+        
+        .footer-heading {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--lime-green-start);
+        }
+        
+        .social-icons a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            transition: color 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+        
+        .social-icons a:hover {
+            color: var(--lime-green-start);
+            transform: translateY(-2px);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .copyright-text {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* --- Responsive Styles --- */
+        
+        /* Default (Desktop) */
+        .hero-img-mobile { display: none; }
+        .hero-img-desktop { display: block; }
+        .navbar {
+            background-color: transparent;
+        }
+
+        /* Tablet and Mobile (max-width: 991.98px) */
+        @media (max-width: 991.98px) {
+            .navbar {
+                background-color: transparent;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            
+            .navbar-brand img {
+                height: 30px;
+            }
+
+            .navbar-collapse {
+                background-color: rgba(0,0,0,0.2);
+                text-align: center;
+                padding: 1rem;
+                margin-top: 1rem;
+                border-radius: 0.5rem;
+            }
+
+            #hero-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 110px;
+                padding-bottom: 0;
+                text-align: left;
+                background-image: url('/assets/mobile-background.jpg');
+            }
+
+            .hero-text-content {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .hero-slogan {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+
+            .cta-buttons {
+                display: flex;
+            }
+
+            .cta-buttons .btn {
+                padding: 0.75rem 1.25rem;
+                font-size: 0.9rem;
+            }
+            .cta-buttons .btn.me-3 {
+                margin-right: 0.5rem !important;
+            }
+
+            .cta-buttons .btn-gradient {
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                flex-grow: 1;
+                text-align: center;
+            }
+            
+            .hero-img-desktop { display: none; }
+            .hero-img-mobile {
+                display: block;
+                position: static;
+                transform: none;
+                z-index: auto;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            /* About Section Responsive */
+            #about-section {
+                padding: 60px 0;
+                text-align: center;
+            }
+            .about-image-container {
+                margin-bottom: 2.5rem;
+            }
+            
+            /* Features Section Responsive */
+            #features-section {
+                padding: 60px 0;
+            }
+            .feature-card-body {
+                padding: 1.25rem;
+            }
+
+            /* Packages Section Responsive */
+            #packages-section {
+                padding: 60px 0;
+            }
+            .package-card {
+                padding: 1.5rem;
+            }
+            .package-card .title {
+                font-size: 2.2rem;
+            }
+            .reward-grid {
+                gap: 1rem;
+            }
+            .reward-item .value {
+                font-size: 1.2rem;
+            }
+            
+            /* FAQ Section Responsive */
+            #faq-section {
+                padding: 60px 0;
+            }
+            
+            /* CTA Section Responsive */
+            #cta-section {
+                 padding: 60px 0;
+            }
+
+            /* Footer Responsive */
+            footer {
+                text-align: center;
+            }
+            .footer-tagline {
+                margin: 0 auto 2.5rem auto;
+            }
+            .footer-heading {
+                margin-top: 2rem;
+            }
+            .social-icons {
+                margin-top: 1.5rem;
+            }
+            .social-icons a {
+                margin: 0 0.75rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .reward-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Placeholder -->
+    <header id="header-placeholder"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 hero-text-content" data-aos="fade-up">
+                        <img src="/assets/logo.svg" alt="Animo Logo" class="hero-logo mb-3">
+                        <h1 class="hero-slogan">
+                            Technology, Community, And Opportunity Into One Seamless Platform Where Individuals Can Thrive
+                        </h1>
+                        <div class="cta-buttons mt-4">
+                            <a href="register.html" class="btn btn-gradient rounded-pill py-3 me-3">Get Started</a>
+                            <a href="#about-section" class="btn btn-secondary-custom rounded-pill py-3">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="dynamic-whatsapp-link" target="_blank">
+                <img src="/assets/hero-image-desktop.png" alt="Woman using her phone with neon graphics in the background" class="hero-img-desktop" data-aos="fade-left" data-aos-delay="200">
+            </a>
+            <a href="#" class="dynamic-whatsapp-link" target="_blank">
+                <img src="/assets/hero-image-mobile.png" alt="Woman smiling while using her phone" class="hero-img-mobile">
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <h2 class="section-title mb-4">
+                            WHAT IS <br> <span class="highlight">ANIMO?</span>
+                        </h2>
+                        <p class="about-text">
+                            Animo is an innovative, people driven, and globally connected ecosystem built to redefine wealth creation and personal growth. Our purpose is to merge technology, community, and opportunity into one seamless platform where individuals can thrive.
+                        </p>
+                        <p class="about-text">
+                            With Animo, you gain access to a dynamic marketing network, premium skill acquisition programs, and our groundbreaking walk-and-earn technology that transforms your daily steps into real income. Beyond this, we open doors to sustainable real estate opportunities and cutting-edge tech solutions designed to secure long-term financial freedom.
+                        </p>
+                         <p class="about-text">
+                            Here, you are not just earning, you are building, evolving, and pioneering your future. Animo is your pathway to prosperity, where innovation meets opportunity and every action moves you closer to abundance.
+                        </p>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="about-image-container">
+                            <a href="#" class="dynamic-whatsapp-link" target="_blank">
+                                <img src="/assets/about-image.jpeg" alt="Animo promotional banner" class="img-fluid about-image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <h2 class="section-title mb-5">
+                            Explore Our <br> <span class="highlight">Features</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <!-- Feature Card 1: Skillup -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/animo-skillup.jpeg" alt="Animo Skillup Program" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Animo Skillup Program</h3>
+                                    <p class="feature-card-text">Learn modern, in-demand digital skills that open doors to new opportunities, growth, and financial independence.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 2: Gigs -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                         <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/animo-gigs.jpeg" alt="Animo Gigs" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Animo Gigs</h3>
+                                    <p class="feature-card-text">Find work, offer services, and get paid. Connect instantly with verified workers for jobs you need done.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 3: Walk to Earn -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/walk-and-earn.jpeg" alt="Walk to Earn" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Walk to Earn</h3>
+                                    <p class="feature-card-text">Turn your sweat into cash. Your daily steps contribute to your growth, both physically and financially.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 4: Digital Real Estate -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/digital-real-estate.jpeg" alt="Digital Real Estate" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Digital Real Estate</h3>
+                                    <p class="feature-card-text">Own, trade, and profit from premium virtual properties in a thriving digital marketplace.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 5: Play & Earn -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/play-games-and-earn.jpeg" alt="Play & Earn" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Play & Earn</h3>
+                                    <p class="feature-card-text">Play games and earn real rewards, paid directly to your bank account. No gimmicks, just pure entertainment that pays.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 6: Earn as you Snap -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/earn-as-you-snap.jpeg" alt="Earn as you Snap" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Earn As You Snap</h3>
+                                    <p class="feature-card-text">Get rewarded daily for sharing ANIMO content on your Snapchat story. Influence made simple and profitable.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     <!-- Feature Card 7: Animo Yaps -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/talk-and-earn.jpeg" alt="Animo Yaps" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Animo Yaps</h3>
+                                    <p class="feature-card-text">Your voice has value. Earn rewards for simply talking about Animo on your social media platforms.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 8: Photo Contest -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/photo-contest.jpeg" alt="Face of Animo Contest" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Face of Animo Contest</h3>
+                                    <p class="feature-card-text">Participate in our monthly photo contest, win prizes, and become the official ambassador of Animo.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Feature Card 9: Book Store -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#" class="feature-card-link dynamic-whatsapp-link" target="_blank">
+                            <div class="feature-card">
+                                <img src="/assets/write-books-and-sell.jpeg" alt="Animo Book Store" class="feature-card-img">
+                                <div class="feature-card-body">
+                                    <h3 class="feature-card-title">Animo Book Store</h3>
+                                    <p class="feature-card-text">Have a story to tell? Publish your own e-books and sell directly to a growing audience on Animo.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <h2 class="section-title mb-5">
+                            Choose Your <br> <span class="highlight">Package</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row g-4 g-lg-5 justify-content-center">
+                    <!-- Gold Package -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="package-card package-card-gold">
+                             <div class="popular-tag">Most Popular</div>
+                            <p class="subtitle">Reward Pattern</p>
+                            <h3 class="title title-gold">Animo Gold</h3>
+                             <div class="reward-grid">
+                                <div class="reward-item"><p class="label">Activation Fee</p><h4 class="value">15,000</h4></div>
+                                <div class="reward-item"><p class="label">Sponsor Commission</p><h4 class="value">N13,000</h4></div>
+                                <div class="reward-item"><p class="label">Instant Cashback</p><h4 class="value">N13,000</h4></div>
+                                <div class="reward-item"><p class="label">First Level Spill</p><h4 class="value">N400</h4></div>
+                                <div class="reward-item"><p class="label">Second Level Spill</p><h4 class="value">N100</h4></div>
+                                <div class="reward-item"><p class="label">Snapchat Story</p><h4 class="value">N1,500</h4></div>
+                                <div class="reward-item"><p class="label">Article Engagement</p><h4 class="value">N1,000</h4></div>
+                                <div class="reward-item"><p class="label">Walk-to-Earn</p><h4 class="value">N10/Step</h4></div>
+                            </div>
+                             <ul class="incentives-list">
+                                <li>Incentives <span class="status-badge status-active">Active</span></li>
+                                <li>Animo Yaps <span class="status-badge status-active">Active</span></li>
+                                <li>Bookstore <span class="status-badge status-active">Active</span></li>
+                                <li>Photo Contest <span class="status-badge status-active">Active</span></li>
+                                <li>Skill Up <span class="status-badge status-active">Active</span></li>
+                                <li>Animo Games <span class="status-badge status-active">Active</span></li>
+                                <li>Animo Gig <span class="status-badge status-active">Active</span></li>
+                            </ul>
+                            <a href="register.html" class="btn btn-gradient rounded-pill w-100 mt-4 py-3">Start Now</a>
+                        </div>
+                    </div>
+                     <!-- Silver Package -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="package-card package-card-silver">
+                            <p class="subtitle">Reward Pattern</p>
+                            <h3 class="title title-silver">Animo Silver</h3>
+                            <div class="reward-grid">
+                                <div class="reward-item"><p class="label">Activation Fee</p><h4 class="value">10,000</h4></div>
+                                <div class="reward-item"><p class="label">Sponsor Commission</p><h4 class="value">N9,000</h4></div>
+                                <div class="reward-item"><p class="label">Instant Cashback</p><h4 class="value">N8,500</h4></div>
+                                <div class="reward-item"><p class="label">First Level Spill</p><h4 class="value">N200</h4></div>
+                                <div class="reward-item"><p class="label">Second Level Spill</p><h4 class="value">N100</h4></div>
+                                <div class="reward-item"><p class="label">Snapchat Story</p><h4 class="value">N1,000</h4></div>
+                                <div class="reward-item"><p class="label">Article Engagement</p><h4 class="value">N700</h4></div>
+                                <div class="reward-item"><p class="label">Walk-to-Earn</p><h4 class="value">N6/Step</h4></div>
+                            </div>
+                             <ul class="incentives-list">
+                                <li>Incentives <span class="status-badge status-active">Active</span></li>
+                                <li>Animo Yaps <span class="status-badge status-active">Active</span></li>
+                                <li>Bookstore <span class="status-badge status-active">Active</span></li>
+                                <li>Photo Contest <span class="status-badge status-active">Active</span></li>
+                                <li>Skill Up <span class="status-badge status-active">Active</span></li>
+                                <li>Animo Games <span class="status-badge status-inactive">Inactive</span></li>
+                                <li>Animo Gig <span class="status-badge status-inactive">Inactive</span></li>
+                            </ul>
+                            <a href="register.html" class="btn btn-gradient rounded-pill w-100 mt-4 py-3">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq-section">
+            <div class="container">
+                 <div class="row justify-content-center text-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <h2 class="section-title mb-5">
+                            Frequently Asked <br> <span class="highlight">Questions</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                        <div class="accordion" id="faqAccordion">
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        What is Animo?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Animo is a comprehensive ecosystem designed for wealth creation and personal growth. It combines technology, community, and various earning opportunities—like our Skillup program, Walk-to-Earn feature, and Digital Real Estate—into a single, seamless platform.
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- FAQ 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        How does the 'Walk-to-Earn' feature work?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Our 'Walk-to-Earn' feature rewards you for your physical activity. Simply activate it in the app, and your daily steps will be converted into real income, seamlessly integrating wellness with financial growth.
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- FAQ 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What kind of skills can I learn in the Animo Skillup Program?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The Animo Skillup Program offers a wide range of modern, in-demand digital skills. These include areas like UI/UX Design, Content Creation, Digital Marketing, Web Development, and Artificial Intelligence (AI), equipping you for success in today's digital world.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Is Animo available worldwide?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! Animo is a global platform. Anyone from any part of the world can get started, grow, and earn. All you need is your phone, your time, and your determination to succeed.
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- FAQ 5 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        What is the difference between the Gold and Silver packages?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The Gold package offers higher reward values and unlocks access to all platform features, including premium ones like Animo Games and Animo Gigs. The Silver package provides a great starting point with access to most features but with lower earning potential and some features inactive.
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- FAQ 6 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        How do I get started with Animo?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Getting started is simple! Click the "Register" or "Get Started" button on our website, choose your preferred package (Silver or Gold), complete the registration process, and you'll be ready to explore all the earning opportunities Animo has to offer.
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- FAQ 7 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Are my earnings and data secure on the platform?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Absolutely. We prioritize the security of our users. Our platform is built with robust security measures to protect your personal data and your earnings, ensuring a safe and trustworthy environment for everyone.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta-section">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <h2 class="section-title mb-4">
+                            Ready to Start Your <br> <span class="highlight">Journey?</span>
+                        </h2>
+                        <p class="cta-text mb-5">
+                            Join the Animo ecosystem today and unlock your potential. Your pathway to prosperity, growth, and financial freedom is just one click away.
+                        </p>
+                        <a href="register.html" class="btn btn-gradient rounded-pill px-5 py-3 fs-5">Get Started Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <footer id="footer-placeholder"></footer>
+
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Animo",
+      "url": "https://animoofficial.com.ng/",
+      "logo": "https://animoofficial.com.ng/assets/logo.svg",
+      "description": "An innovative, people driven, and globally connected ecosystem built to redefine wealth creation and personal growth.",
+      "sameAs": []
+    }
+    </script>
+    
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="firebase-init.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

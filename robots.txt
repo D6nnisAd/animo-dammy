@@ -1,0 +1,23 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# Allow all crawlers to access the site, with a few exceptions.
+User-agent: *
+Allow: /
+
+# Disallow the admin page and all associated scripts from being crawled.
+Disallow: /admin.html
+Disallow: /admin.js
+Disallow: /firebase-init.js
+Disallow: /app.js
+Disallow: /main.js
+
+# We recommend allowing Google Ads bot to crawl your entire site
+User-agent: AdsBot-Google
+Allow: /
+
+# We also recommend allowing Google's main crawler
+User-agent: Googlebot
+Allow: /
+
+# Sitemap location
+Sitemap: https://animoofficial.com.ng/sitemap.xml
