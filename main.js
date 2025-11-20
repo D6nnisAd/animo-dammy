@@ -1,4 +1,10 @@
 
+// Prevent the browser from showing the install prompt immediately
+window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the mini-infobar from appearing on mobile
+    e.preventDefault();
+    console.log('Install prompt prevented');
+});
 
 /**
  * Fetches HTML content from a given URL and injects it into a specified element.
