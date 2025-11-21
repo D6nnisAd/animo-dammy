@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <i class="fas fa-check-circle"></i> Verified Merchant
                             </div>
                         </div>
-                        <span class="btn btn-gradient">Get Key</span>
+                        <span class="btn btn-gradient">Get Access Code</span>
                     </a>
                 `;
                 merchantGrid.innerHTML += merchantCard;
