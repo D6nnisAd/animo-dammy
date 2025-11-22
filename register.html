@@ -120,27 +120,54 @@
             color: var(--deep-blue);
         }
         
-        .package-options .form-check {
+        /* Custom Package Selector Styles */
+        .package-selector-container .col-6 {
+             padding: 0 5px;
+        }
+
+        .package-card-select {
             background-color: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 1rem 1.5rem;
-            border-radius: 0.5rem;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem 1rem;
             cursor: pointer;
-            transition: border-color 0.2s;
+            position: relative;
+            overflow: hidden;
         }
 
-        .package-options .form-check:hover {
-            border-color: rgba(255, 255, 255, 0.5);
+        .package-card-select:hover {
+             border-color: rgba(255, 255, 255, 0.5);
+             background-color: rgba(255, 255, 255, 0.08);
+             transform: translateY(-2px);
         }
 
-        .package-options .form-check-input:checked {
-            background-color: var(--lime-green-start);
+        .btn-check:checked + .package-card-select {
+            background-color: rgba(204, 255, 102, 0.1);
             border-color: var(--lime-green-start);
+            box-shadow: 0 0 15px rgba(204, 255, 102, 0.15);
+        }
+        
+        .btn-check:checked + .package-card-select .package-name {
+            color: var(--lime-green-start);
         }
 
-        .package-options .form-check-input:checked + .form-check-label {
-            color: var(--lime-green-start);
-            font-weight: 600;
+        .package-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #fff;
+        }
+        
+        .package-price {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
         }
 
         .fine-print, .fine-print a {
@@ -185,31 +212,25 @@
                 <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
             </div>
             <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Choose a unique username" required>
-            </div>
-            <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Create a strong password" required>
             </div>
-             <div class="mb-3">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Your phone number" required>
-            </div>
             
-            <div class="mb-3">
-                <label class="form-label">Choose Your Package</label>
-                <div class="package-options d-grid gap-2">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="package" id="packageGold" value="gold" checked>
-                        <label class="form-check-label" for="packageGold">
-                            Animo Gold - ₦15,000
+            <div class="mb-4">
+                <label class="form-label mb-2">Choose Your Package</label>
+                <div class="row g-3 package-selector-container">
+                    <div class="col-6">
+                        <input type="radio" class="btn-check" name="package" id="packageGold" value="gold" checked>
+                        <label class="package-card-select" for="packageGold">
+                            <span class="package-name">Animo Gold</span>
+                            <span class="package-price">₦15,000</span>
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="package" id="packageSilver" value="silver">
-                        <label class="form-check-label" for="packageSilver">
-                            Animo Silver - ₦10,000
+                    <div class="col-6">
+                        <input type="radio" class="btn-check" name="package" id="packageSilver" value="silver">
+                        <label class="package-card-select" for="packageSilver">
+                            <span class="package-name">Animo Silver</span>
+                            <span class="package-price">₦10,000</span>
                         </label>
                     </div>
                 </div>
